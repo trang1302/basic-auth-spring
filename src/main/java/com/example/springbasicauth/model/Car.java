@@ -1,11 +1,30 @@
 package com.example.springbasicauth.model;
 
-import lombok.Data;
+import lombok.*;
 
-@Data
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+
+@Entity
 public class Car {
-    private final Integer id;
-    private final String make;
-    private final String model;
-    private final Integer year;
+
+    @Id
+    @GeneratedValue
+    private Integer id;
+
+    private String make;
+    private String model;
+    private Integer year;
+
+    public Car(String make, String model, Integer year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
 }
