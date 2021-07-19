@@ -43,14 +43,20 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
     @Bean
     protected UserDetailsService userDetailsService() {
         UserDetails buyer = User.builder()
-                .username("car")
+                .username("car_buyer")
                 .password(passwordEncoder.encode("buy_today"))
-                .roles("BUYER") //ROLE_STUDENT
-//                .authorities(STUDENT.getGrantedAuthorities())
+                .roles("BUYER") //ROLE_BUYER
+                .build();
+
+        UserDetails seller = User.builder()
+                .username("car_seller")
+                .password(passwordEncoder.encode("sell_today"))
+                .roles("SELLER") //ROLE_SELLER
                 .build();
 
         return new InMemoryUserDetailsManager(
-                buyer
+                buyer,
+                seller
         );
     }
 }
