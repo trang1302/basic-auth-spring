@@ -1,5 +1,6 @@
 package com.example.springbasicauth.controller;
 
+import com.example.springbasicauth.model.APIResponse;
 import com.example.springbasicauth.model.Car;
 import com.example.springbasicauth.service.CarService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,9 +18,14 @@ public class CarController {
     CarService carService;
 
     @GetMapping
-    public List<Car> getAllCars() {
-        //TODO: APIResponse Class
-        return carService.findAll();
+    public APIResponse<List<Car>> getAllCars() {
+        APIResponse<List<Car>> apiResponse = new APIResponse<>();
+        try {
+            apiResponse.setData(carService.findAll());
+        } catch (Exception e) {
+            apiResponse.setError(e.getMessage());
+        }
+        return apiResponse;
     }
 
 }
