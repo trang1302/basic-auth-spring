@@ -32,7 +32,7 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
                 .csrf().disable()//disable Cross Site Reference Forgery protection for the purposes of this demo
                 .authorizeRequests()
                 .antMatchers("/", "/css/*", "/js/*").permitAll()
-                .antMatchers("/api/**").hasRole("BUYER")
+                .antMatchers("/api/**").permitAll()
                 .anyRequest()
                 .authenticated()
                 .and()

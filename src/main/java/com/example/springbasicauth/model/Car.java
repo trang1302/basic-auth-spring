@@ -16,7 +16,7 @@ public class Car {
 
     @Id
     @GeneratedValue
-    private Integer id;
+    private Long id;
 
     private String make;
     private String model;

@@ -16,4 +16,12 @@ public class CarService {
     public List<Car> findAll() {
         return carRepository.findAll();
     }
+
+    public Car findById(long id) {
+        return carRepository.findById(id);
+    }
+
+    public void sellCar(Car car) {
+        carRepository.save(car);
+    }
 }
