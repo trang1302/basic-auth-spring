@@ -36,6 +36,8 @@ password: buy_today
 
 ![Screenshot of authentication in Postman and API response](/img/screen_shot_1.png?raw=true)
 
+(https://raw.github.com/shulginmusic/basic-auth-spring/master/img/screen_shot_1.png)
+
 
 # Got Questions? Contact me!
 efim@shulginmusic.com
