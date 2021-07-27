@@ -34,7 +34,7 @@ car_buyer credentials in when prompted:
 username: car_buyer
 password: buy_today
 
-![Screenshot of authentication in Postman and API response](/img/screen_shot_1.jpg?raw=true)
+![Screenshot of authentication in Postman and API response](/img/screen_shot_1.png?raw=true)
 
 
 # Got Questions? Contact me!
