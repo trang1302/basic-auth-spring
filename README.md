@@ -43,7 +43,7 @@ As you can see above, you will get a response containing the cars currently in t
 
 However, when you try to POST a car at /api/sell you will get a 403 Forbidden. That's because car_buyer isn't authorized to POST ("sell") cars to the database.
 
-<img src="img/screen_shot_2.png" width="700">
+<img src="img/screen_shot_2.png" width="950">
 
 ## Authenticating as car_seller and POSTing to /api/sell
 
@@ -72,7 +72,7 @@ Choose POST and pass the JSON object:
 
 Then click send!
 
-<img src="img/screen_shot_3.png" width="700">
+<img src="img/screen_shot_3.png" width="950">
 
 Now issue a GET request at <a href="http:localhost:8080/api/">localhost:8080/api/</a>
 
