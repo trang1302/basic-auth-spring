@@ -29,7 +29,7 @@ public class CarController {
     }
 
     @PreAuthorize("hasAnyRole('ROLE_SELLER')")
-    @PostMapping
+    @PostMapping("/sell")
     public APIResponse<Car> getAllCars(@RequestBody Car car) {
         APIResponse<Car> apiResponse = new APIResponse<>();
         try {
