@@ -22,13 +22,13 @@ car_buyer can consume the API with a GET request at /api
 
 car_seller can consume and POST a new car (see POSTing to API below)
 
-## API endpoints
+# API endpoints
 
 GET cars in database: <a href="http:localhost:8080/api">localhost:8080/api</a> 
 
 POST("sell") new car to database: <a href="http:localhost:8080/api/sell">localhost:8080/api</a> 
 
-## Authenticating as car_buyer
+# Authenticating as car_buyer
 
 Navigate to <a href="http:localhost:8080/api">localhost:8080/api</a> using Postman or your preferred API client and enter the
 car_buyer credentials in when prompted:
@@ -45,7 +45,7 @@ However, when you try to POST a car at /api/sell you will get a 403 Forbidden. T
 
 <img src="img/screen_shot_2.png" width="950">
 
-## Authenticating as car_seller and POSTing to /api/sell
+# Authenticating as car_seller and POSTing to /api/sell
 
 Navigate to <a href="http:localhost:8080/api/sell">localhost:8080/api/sell</a> using Postman or your preferred API client and enter the
 car_seller credentials when prompted:
@@ -56,7 +56,7 @@ password: sell_today
 
 <img src="img/screen_shot_5.png" width="700">
 
-### POST request 
+# POST request 
 
 Let's sell a 2019 Prius
 
